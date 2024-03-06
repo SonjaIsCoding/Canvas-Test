@@ -25,7 +25,7 @@ function App() {
     []);
 
   const startDrawing = ({ nativeEvent }) => {
-    const { offsetX, offsetY } = nativeEven;
+    const { offsetX, offsetY } = nativeEvent;
     contextRef.current.beginPath();
     contextRef.current.moveTo(offsetX, offsetY);
     setIsDrawing(true);
